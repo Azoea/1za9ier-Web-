@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compact Checkout Page</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px; /* Reduced text size */
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .checkout-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .form-section, .summary-section {
+            background-color: #fff;
+            padding: 10px; /* Reduced padding */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-section {
+            width: 65%;
+        }
+
+        .summary-section {
+            width: 30%;
+            position: relative;
+        }
+
+        h2, h3 {
+            margin-top: 0;
+            font-size: 16px; /* Smaller headings */
+        }
+
+        .form-row {
+            display: flex;
+            gap: 10px; /* Added proper gaps between rows */
+            margin-bottom: 8px; /* Reduced spacing */
+        }
+
+        .form-group {
+            flex: 1;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 12px; /* Smaller label text */
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 5px; /* Reduced padding */
+            font-size: 12px; /* Smaller input text size */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .payment-option {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+
+        .payment-logo {
+            height: 15px; /* Adjusted logo size */
+            width: auto;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px; /* Reduced spacing */
+        }
+
+        ul li p {
+            margin: 0;
+            font-size: 12px; /* Smaller text size */
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 8px; /* Compact button size */
+            font-size: 12px; /* Smaller button text */
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .order-total {
+            margin-top: 10px;
+            font-size: 12px; /* Smaller text */
+        }
+
+        .nepal-payment {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .nepal-payment img {
+            width: 50px; /* Adjusted logo size */
+            margin: 5px;
+        }
+
+        .qr-code {
+            width: 100px; /* QR code size */
+            height: 100px;
+            margin: 10px auto;
+        }
+
+        .social-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-section img {
+            width: 20px; /* Instagram logo size */
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="checkout-container">
+        <!-- Left Section: Form -->
+        <div class="form-section">
+            <h2>PROCEED TO PAYMENT</h2>
+            <form>
+                <!-- Shipping Address -->
+                <h3>SHIPPING ADDRESS</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="street-address">Street Address</label>
+                        <input type="text" id="street-address" placeholder="Street Address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company (Optional)</label>
+                        <input type="text" id="company" placeholder="Company">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" placeholder="City" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="postal-code">Postal Code</label>
+                        <input type="text" id="postal-code" placeholder="Postal Code" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="country">Country/Region</label>
+                        <select id="country" required>
+                            <option value="France" selected>France</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="USA">USA</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State/Province</label>
+                        <select id="state">
+                            <option value="">Select</option>
+                            <option value="state1">State 1</option>
+                            <option value="state2">State 2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="Phone" required>
+                </div>
+            </form>
+        </div>
+
+        <!-- Right Section: Order Summary -->
+        <div class="summary-section">
+            <h3>ORDER SUMMARY - (4 ITEMS)</h3>
+            <ul>
+                <li>
+                    <p><strong>CLOTHES</strong><br>Red Carpet Grey Sweatpants<br>Size: XS</p>
+                    <p>€1890.00</p>
+                </li>
+                <li>
+                    <p><strong>CLOTHES</strong><br>Black Death Metal Logo Hoodie<br>Size: M</p>
+                    <p>€1150.00</p>
+                </li>
+                <li>
+                    <p><strong>CLOTHES</strong><br>New Rock Edition Sneakers<br>Size: IT 45</p>
+                    <p>€702.00</p>
+                </li>
+            </ul>
+            <p class="order-total"><strong>Subtotal:</strong> €4171.00</p>
+            <p class="order-total"><strong>Shipping Costs:</strong> Free</p>
+            <p class="order-total"><strong>Total (EUR):</strong> €4171.00</p>
+            <button>PAY FOR THE ORDER</button>
+
+            <!-- Nepal Payment Options -->
+            <div class="nepal-payment">
+                <h3>Payment Options for Nepal</h3>
+                <img src="khalti-logo.png" alt="Khalti" class="payment-img">
+                <img src="escan.jpg" alt="eSewa" class="payment-img">
+                <div>
+                    <img src="escan.jpg" alt="QR Code" class="qr-code">
+                </div>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="social-section">
+                <a href="https://www.instagram.com/axx1lap/" target="_blank">
+                    <img src="il.png" alt="Instagram"> 
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

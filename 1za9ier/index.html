@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1za9ier</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <!-- Header Section -->
+ <header>
+    <div class="nav-bar">
+        <h1>1za9ier</h1>
+        <nav>
+            <button onclick="navigateTo('index.html')">HOME</button>
+            <button onclick="navigateTo('women.html')">SHOP WOMENSWEAR</button>
+            <button class="nav-button" data-page="men.html" onclick="navigateTo('men.html')">SHOP MENSWEAR</button>
+        <button onclick="navigateTo('signin.php')">LOGIN</button> 
+        </nav>
+    </div>    
+</header>
+
+<!-- Main Content -->
+<main>
+    <section id="ss">
+        <h10>NEW</h10>
+        <h10>UPDATED</h10>
+        <h10>WEBSITE</h10>
+        <h11>1ZA9IER</h11>
+        <h10>IS COMING</h10> 
+        <h10>JULY</h10>
+        <h10>2025</h10>
+    </section>
+ 
+    <section id="product1">
+        <h2>New Arrivals</h2>  
+        <p>Get your things</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='hp1product.html';">
+                <img src="1w.png" alt="">
+                <h5>AetherShift Denim</h5>
+                <h4>$1399</h4>
+            </div>
+            <div class="pro" onclick="window.location.href='hp2product.html';">
+                <img src="2.png" alt="">
+                <h5>NebulonRogue Pant</h5>
+                <h4>$999</h4>
+            </div>
+            <div class="pro" onclick="window.location.href='hp3product.html';">
+                <img src="3w.jpg" alt="">
+                <h5>Black kechi Pant</h5>
+                <h4>$999</h4>
+            </div>
+            <div class="pro" onclick="window.location.href='hp4product.html';">
+                <img src="1m.jpg" alt="">
+                <h5>SpectraHeaven Pant</h5>
+                <h4>$1000</h4>
+            </div>
+            <div class="pro" onclick="window.location.href='hp5product.html';">
+                <img src="2m.jpg" alt="">
+                <h5>LunarShard Pant</h5>
+                <h4>$555</h4>
+            </div>
+            <div class="pro" onclick="window.location.href='hp6product.html';">
+                <img src="3m.jpg" alt="">
+                <h5>OrbitClash Denim</h5>
+                <h4>$1555</h4>
+            </div>
+        </div>
+    </section>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Home Page -->
+         <section id="banner">
+        <section id="home" class="page visible">
+            <h2>Welcome to 1za9ier </h2>
+            <p>We are new but we make crazy few and wierd clothes!</p>
+            <button class="normal">Explore More</button>
+        </section>
+    </section>
+ 
+    <!-- New arrivals section -->
+    <section id="product2">
+        <h2>FEATURE PRODUCT</h2>  
+        <p>UPCOMING COLLECTION FOR</p>
+        <h2>OCT 2025</h2>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='ION TRAIL DENIM.html';">
+                <img src="Rm1.jpg" alt="">
+                <h5>ION TRAIL DENIM</h5>
+            </div>
+            <div class="pro" onclick="window.location.href='DARKMATTER THREAD.html';">
+                <img src="Rm2.jpg" alt="">
+                <h5>DARKMATTER THREAD</h5>
+            </div>
+            <div class="pro" onclick="window.location.href='OBLIVIONHAZE PANT.html';">
+                <img src="Rm3.jpg" alt="">
+                <h5>OBLIVIONHAZE PANT</h5>
+            </div>
+            <div class="pro" onclick="window.location.href='VORRIN.html';">
+                <img src="Rm4.jpg" alt="">
+                <h5>VORRIN</h5>
+            </div>
+            <div class="pro" onclick="window.location.href='ZORATHIAN PANT.html';">
+                <img src="R2.jpg" alt="">
+                <h5>ZORATHIAN PANT</h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Page -->
+    <section id="checkout" class="page hidden">
+        <h2>Checkout</h2>
+        <label>Country:
+            <select>
+                <option>USA</option>
+                <option>UK</option>
+                <option>India</option>
+                <option>Canada</option>
+                <option>China</option>
+                <option>Japan</option>
+                <option>France</option>
+                <option>Germany</option>
+                <option>Thailand</option>
+                <option>Vietnam</option>
+                <option>Taiwan</option>
+                <option>Korea</option>
+            </select>
+        </label>
+        <label>First Name: <input type="text" required></label>
+        <label>Last Name: <input type="text" required></label>
+        <label>Phone: <input type="text" required></label>
+        <label>City: <input type="text" required></label>
+        <label>Payment Method:
+            <select>
+                <option>Visa</option>
+                <option>MasterCard</option>
+                <option>PayPal</option>
+            </select>
+        </label>
+        <button onclick="confirmOrder()">Confirm Order</button>
+
+        <div class="right-section">
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <ul>
+                    <li>
+                        <span><img src="https://via.placeholder.com/50" alt="Product Image"> Red Carpet Grey Sweatpants</span>
+                        <span>&euro;1890.00</span>
+                    </li>
+                    <li>
+                        <span><img src="1.png" alt="Product Image"> Black Death Metal Hoodie</span>
+                        <span>&euro;1150.00</span>
+                    </li>
+                </ul>
+                <hr>
+                <div class="order-total">
+                    <span>Order Total</span>
+                    <span>&euro;3040.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<!-- Footer Section -->
+<footer>
+    <p>1za9ier All rights reserved.</p>
+    <div class="social-links">
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://discord.com" target="_blank">Discord</a>
+    </div>
+</footer>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+
+<script>
+    // Function to navigate to different pages
+    function navigateTo(page) {
+        window.location.href = page;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1070 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    color: black;
+}
+
+
+
+/* Login Model */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"poppins",sans-serif;
+}
+body{
+    /* background-color: #c9d6ff;
+    background:linear-gradient(to right,#e2e2e2,#c9d6ff); */
+    background:white;
+}
+.container{
+    background:#fff;
+    width:450px;
+    padding:1.5rem;
+    margin:50px auto;
+    border-radius:10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.6);
+}
+form{
+    margin:0 2rem;
+}
+.form-title{
+    font-size:1.5rem;
+    font-weight:700;
+    text-align:center;
+    padding:1.3rem;
+    margin-bottom:0.4rem;
+}
+input{
+    flex:10;
+    color:inherit;
+    width:100%;
+    background-color:transparent;
+    border:none;
+    font-size:15px;
+    padding:0 0.4em;
+    border-left:solid 1px hsla(0, 0%, 0%, 0.4)
+}
+input:focus{
+    border-left:solid 1px hsla(240, 73%, 71%, 1);
+
+}
+.input-group{
+    padding:1% 0;
+    position:relative;
+   background-color:hsla(227, 63%, 18%, 0.07);
+margin:1em auto;
+border-radius:12px;
+display:flex;
+padding:0.7em 0.1em;
+
+}
+.error{
+    position:absolute;
+    left:2em;
+    bottom:-1em;
+}
+.error p{
+    color:red;
+    font-weight:500;
+    text-align:center;
+    font-size:14px;
+}
+.input-group:focus-within{
+    border:1.5px solid rgb(125,125,235);
+
+}
+.input-group i{
+    flex:1;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.input-group:focus-within i{
+    color:rgb(125,125,235);
+}
+.input-group.password i:first-child{
+    flex:1.1;
+}
+input:focus{
+    outline:none;
+}
+
+.recover{
+    text-align:right;
+    font-size:1rem;
+    margin-bottom:1rem;
+
+}
+.recover a{
+    text-decoration:none;
+    color:rgb(125,125,235);
+}
+.recover a:hover{
+    color:blue;
+    text-decoration:underline;
+}
+.btn{
+    font-size:1.1rem;
+    padding:0.6em 0;
+    border-radius:10px;
+    outline:none;
+    border:none;
+    width:100%;
+    background:rgb(125,125,235);
+    color:black;
+    cursor:pointer;
+    transition:0.9s;
+    margin-top:0.4em;
+    font-weight:600;
+}
+.btn:hover{
+    background:#07001f;
+    color:white;
+}
+.or{
+    font-size:1.1rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    text-align:center;
+}
+.icons{
+    text-align:center;
+}
+.icons i{
+    color:rgb(125,125,235);
+    padding:0.8rem 1.5rem;
+    border-radius:10px;
+    font-size:1.5rem;
+    cursor:pointer;
+    border:2px solid #dfe9f5;
+    margin:0 15px;
+    transition:1s;
+}
+.icons i:hover{
+    background:#07001f;
+    font-size:1.6rem;
+    border:2px solid rgb(125,125,235);
+}
+.links{
+    display:flex;
+    justify-content:space-around;
+    padding:0 4rem;
+    margin-top:0.9rem;
+    font-weight:bold;
+}
+button{
+    color:rgb(125,125,235);
+    border:none;
+    background-color:transparent;
+    font-size:1rem;
+    font-weight:bold;
+}
+button:hover{
+    text-decoration:underline;
+    color:blue;
+}
+.error-main{
+background-color:brown;
+padding:0.5em 1em;
+border-radius:12px;
+width:80%;
+margin:0 auto;
+}
+.error-main p{
+color:white;
+text-align:center;
+}
+.user-details{
+    margin-top:5em;
+    font-size:1.5em;
+    font-weight:400;
+}
+.user-details p{
+    margin-bottom:0.5em;
+    text-align:center;
+}
+.user-details p:first-child{
+    text-decoration:underline;
+    margin-bottom:2em;
+    font-weight:600;
+}
+.user-details a{
+    display: block; 
+    text-align: center; 
+    text-decoration-color:rgb(125,125,235);
+    color:rgb(125,125,235);
+    transition:5ms;
+}
+.user-details a:hover{
+color:blue;
+text-decoration-color:blue;
+}
+@media screen and (max-width: 767px) {
+.container{
+    box-shadow:unset;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+
+
+/* Highlight the active button */
+.nav-button.active {
+    background-color: rgb(0, 0, 0);
+    color: rgb(251, 251, 251);
+        font-weight: bold;
+        text-decoration: underline;
+
+}
+
+.nav-bar nav button {
+    background: none;
+    color: white;
+    border: none;
+    margin: 0 10px;
+    cursor: crosshair;
+    font-size: 17px;
+    
+
+  
+  
+   
+   
+}
+
+.nav-bar nav button:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Login Inside */
+/* Modal Background */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+
+/* Modal Content */
+.modal-content {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Text */
+.modal-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Input Field */
+.modal-content input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Continue Button */
+.continue-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: #e30613; /* Red color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.continue-button:hover {
+    background: #b00510; /* Darker red */
+}
+
+/* Privacy Link */
+.privacy-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #e30613;
+    text-decoration: none;
+}
+
+.privacy-link:hover {
+    text-decoration: underline;
+}
+
+/* Close Button */
+.close-modal {
+    display: none; /* Optional: Remove the close button if not required in the design */
+}
+
+/* Login Inside */
+
+.modal-logo {
+    max-width: 50px;
+    margin-bottom: 20px;
+}
+
+
+
+.login-button {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.login-button:hover {
+    background: #555;
+}
+
+
+
+/* Login inside 2nd */
+.modal-content input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Update Submit Button */
+.continue-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: #e30613; /* Red color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.continue-button:hover {
+    background: #b00510; /* Darker red */
+}
+
+/* Links */
+.privacy-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #e30613;
+    text-decoration: none;
+}
+
+.privacy-link:hover {
+    text-decoration: underline;
+}
+
+/*Login inside 2nd */
+/* Home Page */
+#ss{
+    background-image:url("jpg")
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+ }
+
+ #ss h4{
+    padding-bottom: 15px;
+    
+ }
+#ss h11{
+    color: rgb(9, 9, 9);
+   
+}
+
+#ss h10{
+    font-size: 60px;
+    font-weight: bold;
+    
+   
+}
+/*Women New Arrivals*/
+#product1{
+    text-align: center;
+}
+
+#product2{
+    text-align: center;
+}
+
+
+
+
+#ss h11{
+    font-size: 99px;
+    font-weight: bold;
+  
+
+}
+
+/*Women New arrival P Setting*/
+
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro {
+    width: 23%
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px;
+    border-radius: 25px
+    cursor:pointer;   
+
+}
+
+#product1 .pro img{
+    width: 100%;
+    
+}
+
+
+
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("zr.jpg");
+    color: whitesmoke;
+   font-weight: 200;
+    
+
+}
+
+button.normal{
+    font-size:14px;
+    font-weight: 600;
+  
+    color: black;
+    background-color:white;
+    border-radius: 4px;
+    cursor: ponter;
+    border:none;
+    outline:none;
+    transition: 0.2s;
+}
+ #banner button:hover{
+    background: grey;
+
+ }
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Page and Modal Styles */
+.page {
+    display: none;
+    padding: 20px;
+}
+
+.page.visible {
+    display: block;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 8px;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content input,
+.modal-content button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.modal-content .social-login button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.modal-content img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Category Styles */
+.categories button {
+    padding: 10px;
+    margin: 10px 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.categories button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Product Styles */
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+}
+
+.product button {
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #333;
+}
+
+/* Product Details Page */
+#product-details img {
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+}
+
+#product-details label {
+    display: block;
+    margin: 10px 0;
+}
+
+#product-details select {
+    padding: 5px;
+}
+
+#product-details button {
+    padding: 10px 15px;
+    margin: 10px 5px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#product-details button:hover {
+    background-color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+.gallery-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+.product-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.product-card h3 {
+    font-size: 1em;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+.product-card p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 0 0 10px;
+}
+.product-card .price {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+/* Single Product */
+#prodetails {
+    display: flex; /* Align elements horizontally */
+    justify-content: space-between; /* Space out image and text */
+    align-items: flex-start; /* Align items to the top */
+    margin-top: 20px; /* Add space above the section */
+    gap: 10px; /* Space between image and text */
+}
+
+#prodetails .single-pro-image {
+    width: 35%; /* Image section width */
+    max-width: 350px; /* Optional: Limit image section width */
+}
+
+#prodetails .single-pro-image img {
+    display: block; /* Ensure no extra spacing below images */
+    width: 100%; /* Make image responsive */
+    height: auto;
+}
+
+#prodetails .single-pro-details {
+    width: 100%; /* Text section width */
+    
+}
+
+#prodetails .single-pro-details h6 {
+    margin-bottom: 10px;
+    color: #555; /* Subtle text color */
+}
+
+#prodetails .single-pro-details h4 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+#prodetails .single-pro-details h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#prodetails .single-pro-details select,
+#prodetails .single-pro-details input {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#prodetails .single-pro-details input {
+
+
+    width: 35px;
+    height: 20px;
+
+
+#prodetails .single-pro-details button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#prodetails .single-pro-details span {
+    display: block;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: #555;
+}
+
+/* Cart Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.form-section,
+.summary-section {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-section {
+    width: 60%;
+}
+
+.summary-section {
+    width: 35%;
+}
+
+h2, h3 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-img {
+    height: 100px;
+    width: 1000px;
+    
+}
+
+.qr-code {
+    height: 500px;
+    width: 500px;
+}
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+/* Cart Page */
+
+
+
+
+
+/* Styling for Product 2 Section */
+#product2 {
+    padding: 20px;
+    text-align: center;
+}
+
+#product2 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#product2 p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for 2 Columns */
+#product2 .pro-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between rows and columns */
+    justify-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Individual Product Card */
+#product2 .pro {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%; /* Ensure cards fit inside columns */
+}
+
+#product2 .pro img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#product2 .pro h5 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+#product2 .pro h4 {
+    font-size: 16px;
+    color: #ff5722;
+    font-weight: bold;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    #product2 .pro-container {
+        grid-template-columns: 1fr; /* 1 column for smaller screens */
+    }
+}
+
+
+
+#product-detail {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+}
+
+.product-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Space between left section (product) and right section (video) */
+}
+
+/* Left Section: Product Details and Image */
+.product-left {
+    flex: 2; /* Larger space for the left side */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Small gap between product details and image */
+}
+
+.product-details {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.product-details h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-details p {
+    color: #555;
+}
+
+/* Product Image */
+.product-image {
+    text-align: center;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Right Section: Video Bar */
+
+
+.video-bar {
+    flex: 1; /* Fixed width for video bar */
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    video right: none;
+}
+
+.video-bar h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.video-bar video {
+    border-radius: 8px;
+    border: 2px solid #ccc;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1za9ier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <!-- Header Section -->
+    <header>
+        <div class="nav-bar">
+            <h1>1za9ier</h1>
+            <nav>
+                <button onclick="navigateTo('index.html')">HOME</button>
+                <button onclick="navigateTo('women.html')">SHOP WOMENSWEAR</button>
+                <button class="nav-button" data-page="men.html" onclick="navigateTo('men.html')">SHOP MENSWEAR</button>
+                <button onclick="navigateTo('signin.php')">LOGIN</button> 
+            </nav>
+         
+        
+        </div>
+    </header>
+
+    
+    
+
+  
+
+  
+<!-- New arrivals-->
+    <section id="product2">
+        <h2>New Arrivals</h2>  
+        <p>Have came grab your needs</p>
+        <div class="pro-container">
+          <div class="pro" onclick="window.location.href='sm1product.html';">
+              <img src="1m.jpg"alt="">
+            <h5>SpectraHaven Pants</h5>
+            <h4>$1000</h4>
+          </div>
+          <div class="pro" onclick="window.location.href='sm2product.html';">
+              <img src="2m.jpg"alt="">
+            <h5>LunarShard Pants</h5>
+            <h4>$555</h4>
+          </div>
+          <div class="pro" onclick="window.location.href='sm3product.html';">
+              <img src="3m.jpg"alt="">
+            <h5>OrbitClash Denims</h5>
+            <h4>$1555</h4>
+          </div>
+          <div class="pro"  onclick="window.location.href='sm4product.html';">
+              <img src="4m.jpg"alt="">
+            <h5>AndromedaRip Flares</h5>
+            <h4>$1111</h4>
+          </div>
+          <div class="pro"  onclick="window.location.href='sm5product.html';">
+              <img src="5m.jpg"alt="">
+            <h5>Xenolith Pants</h5>
+            <h4>$888</h4>
+          </div>
+          <div class="pro"  onclick="window.location.href='sm6product.html';">
+              <img src="6m.jpg"alt="">
+            <h5>Celestara Cargo Pants</h5>
+            <h4>$1222</h4>
+          </div>
+         
+            
+               
+              </div>
+          </div>
+        </div>
+      </section>
+
+     
+
+        <!-- Checkout Page -->
+        <section id="checkout" class="page hidden">
+            <h2>Checkout</h2>
+            <label>Country:
+                <select>
+                    <option>USA</option>
+                    <option>UK</option>
+                    <option>India</option>
+                    <option>Canada</option>
+                    <option>China</option>
+                    <option>Japan</option>
+                    <option>France</option>
+                    <option>Germany</option>
+                    <option>Thailand</option>
+                    <option>Vietnam</option>
+                    <option>Taiwan</option>
+                    <option>Korea</option>
+                </select>
+            </label>
+            <label>First Name: <input type="text" required></label>
+            <label>Last Name: <input type="text" required></label>
+            <label>Phone: <input type="text" required></label>
+            <label>City: <input type="text" required></label>
+            <label>Payment Method:
+                <select>
+                    <option>Visa</option>
+                    <option>MasterCard</option>
+                    <option>PayPal</option>
+                </select>
+            </label>
+            <button onclick="confirmOrder()">Confirm Order</button>
+<!--Vetemnts-->
+            <div class="right-section">
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <ul>
+                        <li>
+                            <span><img src="https://via.placeholder.com/50" alt="Product Image"> Red Carpet Grey Sweatpants</span>
+                            <span>&euro;1890.00</span>
+                        </li>
+                        <li>
+                            <span><img src="1.png" alt="Product Image"> Black Death Metal Hoodie</span>
+                            <span>&euro;1150.00</span>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="order-total">
+                        <span>Order Total</span>
+                        <span>&euro;3040.00</span>
+                    </div>
+<!--s-->
+        </section>
+    </main>
+
+    
+        
+
+    <!-- Footer Section -->
+    <footer>
+        <p>1za9ier All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://discord.com" target="_blank">Discord</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        // Function to navigate to different pages
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+

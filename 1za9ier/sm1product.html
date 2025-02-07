@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1za9ier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <!-- Header Section -->
+    <header>
+        <div class="nav-bar">
+            <h1>1za9ier</h1>
+            <nav>
+                <button onclick="navigateTo('index.html')">HOME</button>
+                <button onclick="navigateTo('women.html')">SHOP WOMENSWEAR</button>
+                <button onclick="navigateTo('men.html')">SHOP MENSWEAR</button>
+        
+            </nav>
+            
+            <button class="login-button" onclick="toggleLoginModal()">Login</button>
+        </div>
+    </header>
+
+ 
+    
+<!-- Login Modal -->
+<div id="login-modal" class="modal hidden">
+    <div class="modal-content">
+        <img src="your-logo.png" alt="Logo" class="modal-logo">
+        <h2>Log in</h2>
+        <p>Enter your email and we'll send you a login code</p>
+        <input type="email" placeholder="Email" required>
+        <button class="continue-button">Continue</button>
+        <a href="#" class="privacy-link">Privacy</a>
+        <button class="close-modal" onclick="toggleLoginModal()">Close</button>
+    </div>
+</div>
+
+
+<!-- Enter Code Modal -->
+<div id="code-modal" class="modal hidden">
+<div class="modal-content">
+    <img src="your-logo.png" alt="Logo" class="modal-logo">
+    <h2>Enter code</h2>
+    <p>Sent to <span id="user-email">example@email.com</span></p>
+    <input type="text" placeholder="6-digit code" maxlength="6" required>
+    <button class="continue-button">Submit</button>
+    <a href="#" class="privacy-link">Log in with a different email</a>
+    <a href="#" class="privacy-link">Privacy</a>
+    <button class="close-modal" onclick="closeCodeModal()">Close</button>
+</div>
+</div>
+
+<section id="prodetails" class="section-p2">
+    <div class="single-pro-image">
+        <img src="1m.jpg" width="100%" id="MainImg" alt="SpectraHaven Pants">
+          </div>
+          <div class="single-pro-details">
+            <h4>SpectraHaven Pants</h4>
+            <h2>$1000</h2>
+            <select>
+                <option>Select Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XLL</option>
+            </select>
+            <input type="number" value="1">
+            <button>Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>The SpectraHaven Pants are a bold fusion of futuristic design and contemporary fashion, crafted for those who embrace avant-garde aesthetics. These statement pants feature a dynamic silhouette with exaggerated volume, intricate paneling, and unique textural elements that set them apart from conventional styles. Designed with both structure and fluidity, they offer a striking balance between architectural precision and effortless movement. The fabric choice ensures durability while maintaining a comfortable fit, making them ideal for both fashion-forward streetwear and high-concept styling. Whether paired with a sleek fitted top for contrast or layered with oversized pieces for a dramatic effect, the SpectraHaven Pants redefine modern fashion with an innovative and edgy approach.</span>
+
+        </section>
+
+            <section id="product1">
+                <h2>Rare Pieces</h2>  
+                <p>Coming up on September</p>
+                <div class="pro-container">
+                  <div class="pro">
+                    <a href="rm1d.html"> <!-- Link to another page -->
+                      <img src="Rm1.jpg"alt="">
+                    </a> 
+                    <h5>IonTrail Denims</h5>
+                    
+                  </div>
+                  
+
+
+
+
+
+
+<!-- Footer Section -->
+<footer>
+  <p>1za9ier All rights reserved.</p>
+  <div class="social-links">
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://discord.com" target="_blank">Discord</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+

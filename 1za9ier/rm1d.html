@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1za9ier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <!-- Header Section -->
+    <header>
+        <div class="nav-bar">
+            <h1>1za9ier</h1>
+             
+            <nav>
+                <button class="nav-button" data-page="index.html" onclick="navigateTo('index.html')">HOME</button>
+                <button onclick="navigateTo('women.html')">SHOP WOMENWEAR</button>
+                <button onclick="navigateTo('men.html')">SHOP MENWEAR</button>
+            
+            </nav>
+          
+            
+            <button class="login-button" onclick="toggleLoginModal()">Login</button>
+        </div>
+    </header>
+
+    
+     <!-- Login Modal -->
+     <div id="login-modal" class="modal hidden">
+        <div class="modal-content">
+            <img src="your-logo.png" alt="Logo" class="modal-logo">
+            <h2>Log in</h2>
+            <p>Enter your email and we'll send you a login code</p>
+            <input type="email" placeholder="Email" required>
+            <button class="continue-button">Continue</button>
+            <a href="#" class="privacy-link">Privacy</a>
+            <button class="close-modal" onclick="toggleLoginModal()">Close</button>
+        </div>
+    </div>
+    
+
+    <!-- Enter Code Modal -->
+<div id="code-modal" class="modal hidden">
+    <div class="modal-content">
+        <img src="your-logo.png" alt="Logo" class="modal-logo">
+        <h2>Enter code</h2>
+        <p>Sent to <span id="user-email">example@email.com</span></p>
+        <input type="text" placeholder="6-digit code" maxlength="6" required>
+        <button class="continue-button">Submit</button>
+        <a href="#" class="privacy-link">Log in with a different email</a>
+        <a href="#" class="privacy-link">Privacy</a>
+        <button class="close-modal" onclick="closeCodeModal()">Close</button>
+    </div>
+</div>
+   
+
+    <section id="product-detail">
+        <h2>PRODUCT DETAILS</h2>
+    
+        <div class="product-layout">
+            <!-- Left Section: Product Image and Details -->
+            <div class="product-left">
+                <!-- Product Image -->
+                <div class="product-image">
+                    <img src="product-image.jpg" alt="Product Image">
+                </div>
+    
+                <!-- Product Details -->
+                <div class="product-details">
+                    <h3>PRODUCT NAME</h3>
+                    <p>
+                        Here are the details about the product. Highlight key points such as:
+                        <br>
+                        - Features<br>
+                        - Materials used<br>
+                        - Benefits<br>
+                        - Unique selling points<br>
+                        Example: High-quality, durable, eco-friendly denim perfect for all occasions.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Right Section: Video Bar with Video -->
+            <div class="video-bar">
+                <h4>Watch Product Video</h4>
+                <video controls width="300">
+                    <source src="product-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
